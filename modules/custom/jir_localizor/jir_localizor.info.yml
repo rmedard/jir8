@@ -1,0 +1,10 @@
+name: JIR Localizor Module
+description: This JIR module handles all geolicalisation tasks.
+package: JIR Custom Modules
+type: module
+core: '8.x'
+
+dependencies:
+  - smart_ip:smart_ip
+
+version: '8.x-1.0'

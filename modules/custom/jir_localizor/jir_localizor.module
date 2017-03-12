@@ -1,0 +1,19 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: medard
+ * Date: 12/03/2017
+ * Time: 01:31
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\smart_ip\SmartIpLocation;
+use Drupal\node\NodeInterface;
+
+function jir_localizor_entity_create(EntityInterface $node) {
+    if ($node instanceof NodeInterface and $node->bundle() == 'job') {
+        $loc = new SmartIpLocation();
+        $location = $loc->get('city') . ', ' . $loc->get('country') . '(' .$loc->get('countryCode') . ')';
+        $node->set('field_job_poster_location', $location);
+    }
+}
