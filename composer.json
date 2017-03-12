@@ -22,7 +22,8 @@
         "drupal/session_cache": "1.x-dev",
         "drupal/token": "1.x-dev",
         "drupal/country": "1.x-dev",
-        "drupal/typed_data": "1.x-dev"
+        "drupal/typed_data": "1.x-dev",
+        "drupal/drupal": "^8.2"
     },
     "replace": {
         "drupal/core": "~8.2"
